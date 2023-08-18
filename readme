@@ -1,6 +1,4 @@
-CI/CD using github actions.
-
-
+# CI/CD using github actions.
 
 Github actions: CI/CD platform one of the workflow where github actions automate developer workflows
 It basically helps to automate the process as much as possible.
