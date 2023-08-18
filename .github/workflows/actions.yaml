@@ -7,10 +7,10 @@ jobs: #jobs to run
     steps:
       -uses: actions/checkout@v3 # it will checkout the actions from github actions
       -name: cml_run #name of the stemsp
-      env:
+       env:
         repo-token: $ {{secrets.GITHUB.TOKEN}} #this show the repository access of of github
-      run: # what are the commands needs to run
-        pip install -r requirement.txt
-        python train.py
-        echo "Model metrics"
-        cat metrics.txt
+       run: # what are the commands needs to run
+          pip install -r requirement.txt
+          python train.py
+          echo "Model metrics"
+          cat metrics.txt
