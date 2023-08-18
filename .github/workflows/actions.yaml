@@ -1,12 +1,13 @@
-name: project_model_wine_test
-on: [push]
-jobs:
-  run:
-    runs-on: ubuntu-latest
+
+name: project_model_wine_test # this is name of the test
+on: [push] # this is on event
+jobs: # what are the jobs to be done
+  run: #Entry point of .yaml file
+    runs-on: ubuntu-latest # it says which platform of os we are testing
     # optionally use a convenient Ubuntu LTS + DVC + CML image
     # container: ghcr.io/iterative/cml:0-dvc2-base1
-    steps:
-      - uses: actions/checkout@v3
+    steps: # aftering setting up the os It will look for steps.
+      - uses: actions/checkout@v3 # this is for checking out repo, we can see github action way of checking put.
       # may need to setup NodeJS & Python3 on e.g. self-hosted
       # - uses: actions/setup-node@v3
       #   with:
@@ -14,9 +15,11 @@ jobs:
       # - uses: actions/setup-python@v4
       #   with:
       #     python-version: '3.x'
-      - uses: iterative/setup-cml@v1
-      - name: Train model
-        run: |
+
+      - uses: iterative/setup-cml@v1 
+      - name: Train model # name of run
+        run: |     # It will start the linux type command for running the setup
+
           # Your ML workflow goes here
           pip install -r requirement.txt
           python train.py
@@ -25,6 +28,7 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Post reports as comments in GitHub PRs
-          cat metrics.txt
+          cat metrics.txt # showing the metrics.ext generates from the train.py file.
           # cml comment create report.md
-          echo "Sucessfully done."
+          echo "Sucessfully done." #Showing the message in terminal 
+ 
