@@ -28,8 +28,10 @@ jobs: # what are the jobs to be done
           echo "Model Metrics:" >> report.md
           cat metrics.txt>> report.md # showing the metrics.ext generates from the train.py file.
           echo "Data Visualisation:" >> report.md
-          cml-publish feature_importance.png --md >> report.md
-          cml-publish residulas.png --md >> report.md
-          cml-send-comment report.md
+          echo "![](./feature_importance.png)" >> report.md
+          # cml-publish feature_importance.png --md >> report.md
+          echo "![](./residulas.png)" >> report.md
+          # cml-publish residulas.png --md >> report.md
+          cml comment create report.md
           echo "Sucessfully done." #Showing the message in terminal 
  
