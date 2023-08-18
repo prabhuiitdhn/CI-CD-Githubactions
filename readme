@@ -1,9 +1,4 @@
-https://www.youtube.com/watch?v=R8_veQiYBjI&ab_channel=TechWorldwithNana
-
-https://docs.github.com/en/actions/quickstart
-https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions
-https://github.com/actions/checkout/blob/main/action.yml
-https://github.com/iterative/cml#github
+CI/CD using github actions.
 
 
 
@@ -82,3 +77,9 @@ steps:
 
 Example:
 https://www.youtube.com/watch?v=9BgIDqAzfuA&t=417s&ab_channel=DVCorg
+
+https://www.youtube.com/watch?v=R8_veQiYBjI&ab_channel=TechWorldwithNana
+https://docs.github.com/en/actions/quickstart
+https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions
+https://github.com/actions/checkout/blob/main/action.yml
+https://github.com/iterative/cml#github
