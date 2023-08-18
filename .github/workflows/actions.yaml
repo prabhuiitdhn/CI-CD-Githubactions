@@ -1,16 +1,30 @@
-name: testing_wine_project_file #name of the file
-on: [push] # on event
-jobs: #jobs to run
+name: project_model_wine_test
+on: [push]
+jobs:
   run:
-    runs-on: [ubuntu-latest] # this show which os we want to run it.
-    container: docker://dvcorg/cml-py3:latest # docker container
+    runs-on: ubuntu-latest
+    # optionally use a convenient Ubuntu LTS + DVC + CML image
+    # container: ghcr.io/iterative/cml:0-dvc2-base1
     steps:
-      -uses: actions/checkout@v3 # it will checkout the actions from github actions
-      -name: cml_run #name of the stemsp
-       env:
-        repo-token: $ {{secrets.GITHUB.TOKEN}} #this show the repository access of of github
-       run: # what are the commands needs to run
+      - uses: actions/checkout@v3
+      # may need to setup NodeJS & Python3 on e.g. self-hosted
+      # - uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '16'
+      # - uses: actions/setup-python@v4
+      #   with:
+      #     python-version: '3.x'
+      - uses: iterative/setup-cml@v1
+      - name: Train model
+        run: |
+          # Your ML workflow goes here
           pip install -r requirement.txt
           python train.py
-          echo "Model metrics"
+      - name: Write CML report
+        env:
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Post reports as comments in GitHub PRs
           cat metrics.txt
+          # cml comment create report.md
+          echo "Sucessfully done."
