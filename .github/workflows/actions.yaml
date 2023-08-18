@@ -12,5 +12,5 @@ jobs: #jobs to run
       run: # what are the commands needs to run
         pip install -r requirement.txt
         python train.py
-        echo "Model metrics"
+        echo "Model metrics."
         cat metrics.txt
