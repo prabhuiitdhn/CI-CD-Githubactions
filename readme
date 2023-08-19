@@ -3,6 +3,36 @@
 Github actions: CI/CD platform one of the workflow where github actions automate developer workflows
 It basically helps to automate the process as much as possible.
 
+The cost of using MLOps pipeline tool and automation tool are bit costly which does not help return the benefits, So, using Github action is another solution to make the pipeline.
+
+GitHub Actions is a tool offered by GitHub built to automate software workflows. For instance, software developers use GitHub Actions to automate branch merges, for handling issues in GitHub, doing application tests, etc.
+Github actions is not parallelizable.
+
+However, we as Data Scientists can also use GitHub Actions for many things which will use it for automate several steps of the MLOps flow
+    - Automating the ETL process.
+    - Checking whether the model should be retrained or not.
+    - Uploading the new model to your cloud provider and deploying it.
+
+To work with Github actions, we just need to add a .yaml file into .github/workflows
+in .yaml file, we specify
+    - the name of the workflow
+    - When should the workflow trigger: based on a cron schedule, http request, manually, etc.
+    - The OS where the workflow will run (Ubuntu, Windows or MAC).
+    - Each of the steps that the workflow should execute.
+
+Pros and cons of using GitHub Actions as MLOps workflows:
+    - Easy to use
+    - GitHub Actions works with the main programming languages used for Data Science: Python, R, Julia, etc.
+    - You can use the experience of learning GitHub Actions to automate other processes.
+    - GitHub Actions is free for public repositories.
+    - This automation works perfectly with main Cloud providers such as AWS, Azure and Google Cloud,
+    - Every time a workflow fails you will automatically receive an email.
+
+cons:
+    - You have many models that you must put into production or a few but complex models (such as Deep Learning models). In this case, you will need a lot of computing power to train your models and GitHub Action’s machines are not suited for that.
+    - You are already using a tool that could be used for MLOps. For example, imagine that you are using Apache Airflow for ETL processes. In that case, it probably would be a better idea to use this tool for MLOps rather than building an MLOps pipeline with GitHub.
+
+
 Github Events: when github workflows needed to check and build again and ask for pull request is called as event.
 
 Workflows: merged code -> test-> build -> deployment[Update the version number]
@@ -76,6 +106,21 @@ steps:
 Example:
 https://www.youtube.com/watch?v=9BgIDqAzfuA&t=417s&ab_channel=DVCorg
 
+Example:
+    https://neptune.ai/blog/build-mlops-pipelines-with-github-actions-guide
+    https://neptune.ai/blog/mlops-tools-platforms-landscape
+ - Build a MLOps pipelines with github and Google cloud
+ - Build a MLOPs pipeline and putit into production with github, github actions, and google cloud.
+ - model is no of bitcoin transations per hour.
+ Learning
+  - How to set up data extraction pipelines with GitHub Actions.
+  - How to build a model-train and selection pipeline with GitHub Actions.
+  - How to wrap your model as an API.
+  - How to Dockerize your API so that your code is portable and deployable in any Docker-friendly cloud service.
+  - How to set up a continuous deployment pipeline with Cloud and GitHub Actions.
+  - How to automate model retrain with GitHub Actions.
+
+Important Links.
 https://www.youtube.com/watch?v=R8_veQiYBjI&ab_channel=TechWorldwithNana
 https://docs.github.com/en/actions/quickstart
 https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions
