@@ -1,27 +1,8 @@
-<<<<<<< HEAD
-https://www.youtube.com/watch?v=R8_veQiYBjI&ab_channel=TechWorldwithNana
-
-https://docs.github.com/en/actions/quickstart
-https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions
-https://github.com/actions/checkout/blob/main/action.yml
-https://github.com/iterative/cml#github
-
-https://anderfernandez.com/en/blog/github-actions-for-data-science/
-
-=======
 # CI/CD using github actions.
->>>>>>> a54d01e0a964171fbfc3daa09a7f852764f72a9d
 
 Github actions: CI/CD platform one of the workflow where github actions automate developer workflows
 It basically helps to automate the process as much as possible.
 
-<<<<<<< HEAD
-https://neptune.ai/blog/build-mlops-pipelines-with-github-actions-guide
-https://neptune.ai/blog/mlops-tools-platforms-landscape
-
-
-=======
->>>>>>> b41adee074f492cb4e265933ef5d00483ed6d2ba
 The cost of using MLOps pipeline tool and automation tool are bit costly which does not help return the benefits, So, using Github action is another solution to make the pipeline.
 
 GitHub Actions is a tool offered by GitHub built to automate software workflows. For instance, software developers use GitHub Actions to automate branch merges, for handling issues in GitHub, doing application tests, etc.
@@ -117,36 +98,20 @@ steps:
       username: ${{ secrets.DOCKER_USERNAME }} #this is docker username & password. Also, it can be added in github secret.
       password: ${{ secrets.DOCKER_PASSWORD }}
 
-# we can use schedule for croning the data from anywhere after each mentioned timestamp.
-    on:
-     schedule:
-     - cron: '0 0/6 * * *' #Execute every 6 hours
-
-
 # Where github actions runs?
     - github server and managed by server
     - for each job, new or fresh github server created and used to execute the jobs
     - github server make available system as required os like ubuntu, mac or windows os system which mentions on runs-on.
 
-
 Example:
 https://www.youtube.com/watch?v=9BgIDqAzfuA&t=417s&ab_channel=DVCorg
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Example:
-   https://neptune.ai/blog/build-mlops-pipelines-with-github-actions-guide
- - Build a MLOps pipelines with github and Google cloud
- - Build a MLOPs pipeline and put it into production with github, github actions, and google cloud.
- - model is no of bitcoin transactions per hour.
-=======
 Example:
     https://neptune.ai/blog/build-mlops-pipelines-with-github-actions-guide
     https://neptune.ai/blog/mlops-tools-platforms-landscape
  - Build a MLOps pipelines with github and Google cloud
  - Build a MLOPs pipeline and putit into production with github, github actions, and google cloud.
  - model is no of bitcoin transations per hour.
->>>>>>> b41adee074f492cb4e265933ef5d00483ed6d2ba
  Learning
   - How to set up data extraction pipelines with GitHub Actions.
   - How to build a model-train and selection pipeline with GitHub Actions.
@@ -154,12 +119,8 @@ Example:
   - How to Dockerize your API so that your code is portable and deployable in any Docker-friendly cloud service.
   - How to set up a continuous deployment pipeline with Cloud and GitHub Actions.
   - How to automate model retrain with GitHub Actions.
-<<<<<<< HEAD
-=======
-=======
 
 Important Links.
->>>>>>> b41adee074f492cb4e265933ef5d00483ed6d2ba
 https://www.youtube.com/watch?v=R8_veQiYBjI&ab_channel=TechWorldwithNana
 https://docs.github.com/en/actions/quickstart
 https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions
@@ -167,4 +128,3 @@ https://github.com/actions/checkout/blob/main/action.yml
 https://github.com/iterative/cml#github
 
 https://anderfernandez.com/en/blog/github-actions-for-data-science/
->>>>>>> a54d01e0a964171fbfc3daa09a7f852764f72a9d
