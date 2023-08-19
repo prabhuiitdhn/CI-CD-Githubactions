@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://www.youtube.com/watch?v=R8_veQiYBjI&ab_channel=TechWorldwithNana
 
 https://docs.github.com/en/actions/quickstart
@@ -7,6 +8,9 @@ https://github.com/iterative/cml#github
 
 https://anderfernandez.com/en/blog/github-actions-for-data-science/
 
+=======
+# CI/CD using github actions.
+>>>>>>> a54d01e0a964171fbfc3daa09a7f852764f72a9d
 
 Github actions: CI/CD platform one of the workflow where github actions automate developer workflows
 It basically helps to automate the process as much as possible.
@@ -125,6 +129,7 @@ steps:
 Example:
 https://www.youtube.com/watch?v=9BgIDqAzfuA&t=417s&ab_channel=DVCorg
 
+<<<<<<< HEAD
 Example:
    https://neptune.ai/blog/build-mlops-pipelines-with-github-actions-guide
  - Build a MLOps pipelines with github and Google cloud
@@ -137,3 +142,12 @@ Example:
   - How to Dockerize your API so that your code is portable and deployable in any Docker-friendly cloud service.
   - How to set up a continuous deployment pipeline with Cloud and GitHub Actions.
   - How to automate model retrain with GitHub Actions.
+=======
+https://www.youtube.com/watch?v=R8_veQiYBjI&ab_channel=TechWorldwithNana
+https://docs.github.com/en/actions/quickstart
+https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions
+https://github.com/actions/checkout/blob/main/action.yml
+https://github.com/iterative/cml#github
+
+https://anderfernandez.com/en/blog/github-actions-for-data-science/
+>>>>>>> a54d01e0a964171fbfc3daa09a7f852764f72a9d
