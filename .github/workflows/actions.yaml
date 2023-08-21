@@ -1,3 +1,4 @@
+
 name: project_model_wine_test # this is name of the test
 on: [push] # this is on event
 jobs: # what are the jobs to be done
@@ -14,9 +15,11 @@ jobs: # what are the jobs to be done
       # - uses: actions/setup-python@v4
       #   with:
       #     python-version: '3.x'
+
       - uses: iterative/setup-cml@v1 
       - name: Train model # name of run
         run: |     # It will start the linux type command for running the setup
+
           # Your ML workflow goes here
           pip install -r requirement.txt
           python train.py
