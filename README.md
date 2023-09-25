@@ -47,6 +47,8 @@ CI/CD with Github actions
 - setup the pipeline is easy
 
 syntax of workflow
+```
+
 name: # It is name of the workflow
 on: #This is for event
     push: # this is in the case of piushing the code into master branch
@@ -79,8 +81,9 @@ jobs: # this show what are the jobs will be done when workflow starts
             # Add the command we want to work on it, Linux command; below given command will start working on it.
             pip install requirement.txt
             python train.py
+```
 
-# to find any action which might be available in github market place
+to find any action which might be available in github market place
 Like to push and pull docker image into docker hub.
 [docker push and pull action+github+marketplace] helps to give this links
 https://github.com/marketplace/actions/docker-build-push-action
@@ -100,7 +103,7 @@ steps:
       username: ${{ secrets.DOCKER_USERNAME }} #this is docker username & password. Also, it can be added in github secret.
       password: ${{ secrets.DOCKER_PASSWORD }}
 
-# Where github actions runs?
+Where github actions runs?
     - github server and managed by server
     - for each job, new or fresh github server created and used to execute the jobs
     - github server make available system as required os like ubuntu, mac or windows os system which mentions on runs-on.
