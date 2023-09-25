@@ -1,7 +1,9 @@
-# CI/CD using github actions.
+### CI/CD using github actions.
 
-Github actions: CI/CD platform one of the workflow where github actions automate developer workflows
-It basically helps to automate the process as much as possible.
+Github actions: CI/CD platform one of the workflow where github actions automate developer workflows; It basically helps to automate the process as much as possible.
+
+![image](https://github.com/prabhuiitdhn/CI-CD-Githubactions/assets/19517005/cecb8f1f-87bb-4a6f-b877-54976af5441c)
+
 
 The cost of using MLOps pipeline tool and automation tool are bit costly which does not help return the benefits, So, using Github action is another solution to make the pipeline.
 
